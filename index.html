@@ -2,102 +2,140 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="PET-Saúde | UFBA — 13ª edição, PET-Saúde Clima">
+<meta name="theme-color" content="#063b73">
 <title>PET-Saúde | UFBA</title>
-<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="#inicio" aria-label="PET-Saúde UFBA">
-    <span class="brand-mark" aria-hidden="true">PET</span>
-    <span class="brand-text"><strong>PET-Saúde</strong><small>Universidade Federal da Bahia</small></span>
-  </a>
-  <button class="menu" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
-  <nav aria-label="Navegação principal">
-    <a href="#sobre">Sobre</a>
-    <a href="#projeto">Projeto</a>
-    <a href="#equipe">Equipe</a>
-    <a href="#editais">Editais</a>
-    <a href="#contato">Contato</a>
-  </nav>
+<svg class="icons" aria-hidden="true">
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"/></symbol>
+<symbol id="menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+<symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+<symbol id="heart" viewBox="0 0 24 24"><path d="M20.8 8.7c0 5.4-8.8 10.3-8.8 10.3S3.2 14.1 3.2 8.7A4.7 4.7 0 0 1 12 6.2a4.7 4.7 0 0 1 8.8 2.5Z"/></symbol>
+<symbol id="users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0M16 5.5a3 3 0 0 1 0 5.9M17 14.5a4.7 4.7 0 0 1 4 5.5"/></symbol>
+<symbol id="leaf" viewBox="0 0 24 24"><path d="M20.5 3.5C12 3.6 5.1 7.1 4 13.4c-.6 3.7 2.2 6.5 5.9 5.9C16.2 18.3 19.8 11.4 20.5 3.5Z"/><path d="M4 20c3-5 7-8 12-10"/></symbol>
+<symbol id="book" viewBox="0 0 24 24"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5v-17Z"/><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20M8 6h8M8 10h6"/></symbol>
+<symbol id="megaphone" viewBox="0 0 24 24"><path d="M4 11v2a2 2 0 0 0 2 2h2l2 5h2l-1.5-5.5L20 11V5L10.5 9.5H6a2 2 0 0 0-2 2Z"/></symbol>
+<symbol id="map" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"/><path d="M9 3v15M15 6v15"/></symbol>
+<symbol id="instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></symbol>
+<symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+</svg>
+
+<header class="header" id="top">
+<div class="nav">
+<a class="brand" href="#inicio" aria-label="PET-Saúde UFBA">
+<div class="brand-symbol"><b>PET</b><span></span></div>
+<div><strong>PET-Saúde</strong><small>Universidade Federal da Bahia</small></div>
+</a>
+<button class="menu" aria-label="Abrir menu" aria-expanded="false"><svg><use href="#menu"/></svg></button>
+<nav>
+<a href="#sobre">Sobre</a><a href="#clima">Clima</a><a href="#territorio">Território</a><a href="#equipe">Equipe</a><a href="#producoes">Produções</a><a href="#contato">Contato</a>
+</nav>
+</div>
 </header>
 
 <main id="inicio">
 <section class="hero">
-  <div class="copy">
-    <span class="eyebrow">13ª EDIÇÃO · PET-SAÚDE CLIMA</span>
-    <h1>Saúde, território, clima e <strong>participação.</strong></h1>
-    <p>O espaço institucional do PET-Saúde na Universidade Federal da Bahia: projetos, pessoas, ações e produções.</p>
-    <a class="btn" href="#sobre">Conheça o PET-Saúde</a>
-  </div>
-  <div class="art" aria-hidden="true">
-    <div class="sun"></div>
-    <div class="leaf leaf-a"></div>
-    <div class="leaf leaf-b"></div>
-    <div class="horizon"></div>
-    <div class="sea"></div>
-    <div class="boat"><i></i><b></b></div>
-    <div class="bird b1"></div><div class="bird b2"></div>
-  </div>
+<div class="hero-bg">
+<div class="sun"></div><div class="bird b1"></div><div class="bird b2"></div><div class="leaf l1"></div><div class="leaf l2"></div>
+<div class="horizon"></div><div class="wave w1"></div><div class="wave w2"></div><div class="wave w3"></div>
+<div class="place"><span>BAHIA</span><b>SAÚDE + TERRITÓRIO + CLIMA</b></div>
+</div>
+<div class="hero-content wrap reveal">
+<div class="hero-copy">
+<div class="eyebrow"><i></i>13ª EDIÇÃO · PET-SAÚDE CLIMA</div>
+<h1>Saúde, território,<br><em>clima</em> e participação.</h1>
+<p>Um espaço para aproximar universidade, SUS, território e comunidade na construção de respostas às emergências ambientais.</p>
+<div class="actions"><a class="button" href="#clima">Conheça o PET-Saúde <svg><use href="#arrow"/></svg></a><a class="quiet" href="#sobre">Explorar o site <svg><use href="#arrow"/></svg></a></div>
+</div>
+<div class="hero-stamp"><span>UFBA</span><small>Universidade<br>Federal da Bahia</small></div>
+</div>
+<div class="hero-bottom wrap"><span>DESLIZE PARA EXPLORAR</span><i></i></div>
 </section>
 
-<section class="section two" id="sobre">
-  <div><span class="eyebrow">SOBRE</span><h2>PET-Saúde | UFBA</h2></div>
-  <div>
-    <p><b>Programa de Educação pelo Trabalho para a Saúde</b> desenvolvido no âmbito da Universidade Federal da Bahia.</p>
-    <p>Na 13ª edição, o PET-Saúde: Clima coloca em diálogo saúde, emergências climáticas e ambientais, território, educação, ciência e participação social.</p>
-  </div>
+<section class="section wrap" id="sobre">
+<div class="kicker reveal"><span>01</span> SOBRE O PROGRAMA</div>
+<div class="split">
+<h2 class="reveal">Formação que encontra a realidade.</h2>
+<div class="text reveal"><p class="lead">O <b>PET-Saúde</b> aproxima formação, trabalho e comunidade para construir experiências conectadas ao cotidiano do SUS.</p><p>Na UFBA, o programa reúne diferentes sujeitos, saberes e territórios em torno da educação pelo trabalho para a saúde.</p><a class="under" href="#equipe">Conheça quem constrói <svg><use href="#arrow"/></svg></a></div>
+</div>
+<div class="principles">
+<article class="card reveal"><div class="icon"><svg><use href="#heart"/></svg></div><small>01</small><h3>Cuidado</h3><p>Saúde como prática coletiva e compromisso com as pessoas.</p></article>
+<article class="card reveal"><div class="icon"><svg><use href="#users"/></svg></div><small>02</small><h3>Participação</h3><p>Escuta, diálogo e construção compartilhada de soluções.</p></article>
+<article class="card reveal"><div class="icon"><svg><use href="#leaf"/></svg></div><small>03</small><h3>Clima</h3><p>Os impactos das emergências ambientais sobre a saúde.</p></article>
+<article class="card reveal"><div class="icon"><svg><use href="#map"/></svg></div><small>04</small><h3>Território</h3><p>Conhecimento conectado às realidades e aos lugares.</p></article>
+</div>
 </section>
 
-<section class="section project-section" id="projeto">
-  <div class="heading"><div><span class="eyebrow">13ª EDIÇÃO</span><h2>PET-Saúde Clima</h2></div><p>Equidade em saúde à luz das emergências ambientais.</p></div>
-  <div class="project">
-    <div class="project-copy"><span class="tag">PROJETO UFBA</span><h3>Equidade em saúde à luz de emergências ambientais</h3><p>Construção de estratégias para fortalecer o protagonismo social e respostas comunitárias.</p></div>
-    <div class="points">
-      <div><b>01</b><strong>Saúde</strong><small>Produção do cuidado</small></div>
-      <div><b>02</b><strong>Território</strong><small>Realidades e comunidades</small></div>
-      <div><b>03</b><strong>Clima</strong><small>Emergências ambientais</small></div>
-      <div><b>04</b><strong>Comunicação</strong><small>Informação e participação</small></div>
-    </div>
-  </div>
+<section class="climate" id="clima">
+<div class="wrap">
+<div class="kicker light reveal"><span>02</span> 13ª EDIÇÃO</div>
+<div class="climate-head reveal"><h2>PET-Saúde<br><em>Clima.</em></h2><p>Equidade em saúde à luz das emergências ambientais.</p></div>
+<div class="climate-grid">
+<div class="statement reveal"><div class="quote">“</div><p>Uma edição para pensar como as mudanças ambientais atravessam o cuidado, a formação e a vida nos territórios.</p></div>
+<div class="list">
+<a href="#territorio" class="row reveal"><span>01</span><div><b>Formação</b><small>Aprender com diferentes saberes</small></div><svg><use href="#arrow"/></svg></a>
+<a href="#territorio" class="row reveal"><span>02</span><div><b>Integração</b><small>Universidade, serviços e comunidade</small></div><svg><use href="#arrow"/></svg></a>
+<a href="#producoes" class="row reveal"><span>03</span><div><b>Produção</b><small>Pesquisa, comunicação e conhecimento</small></div><svg><use href="#arrow"/></svg></a>
+<a href="#contato" class="row reveal"><span>04</span><div><b>Participação social</b><small>Informação para fortalecer o diálogo</small></div><svg><use href="#arrow"/></svg></a>
+</div>
+</div>
+</div>
 </section>
 
-<section class="section" id="equipe">
-  <div class="heading"><div><span class="eyebrow">QUEM FAZ</span><h2>Pessoas e saberes</h2></div><p>Docentes, tutores, preceptores, estudantes e trabalhadores construindo ações em conjunto.</p></div>
-  <div class="cards">
-    <article><b>DOCENTES</b><p>Coordenação, orientação e produção de conhecimento.</p></article>
-    <article><b>TUTORES E PRECEPTORES</b><p>Integração entre universidade, serviços e território.</p></article>
-    <article><b>ESTUDANTES</b><p>Formação, pesquisa, comunicação e ações no território.</p></article>
-    <article><b>TRABALHADORES</b><p>Experiência do SUS e construção coletiva do cuidado.</p></article>
-  </div>
+<section class="territory wrap section" id="territorio">
+<div class="territory-art reveal">
+<div class="sun small"></div><div class="leaf big"></div><div class="shore"></div><div class="sea s1"></div><div class="sea s2"></div><div class="sea s3"></div>
+<div class="territory-tag"><svg><use href="#map"/></svg><span>SAÚDE + TERRITÓRIO</span></div>
+</div>
+<div class="territory-copy reveal">
+<div class="kicker"><span>03</span> NO TERRITÓRIO</div>
+<h2>O território também produz conhecimento.</h2>
+<p>É onde necessidades, experiências, saberes e possibilidades de cuidado se encontram. O programa parte dessa realidade para construir caminhos coletivos.</p>
+<div class="chips"><span>Escuta</span><span>Diálogo</span><span>Articulação</span></div>
+</div>
 </section>
 
-<section class="section" id="editais">
-  <div class="heading"><div><span class="eyebrow">DOCUMENTOS</span><h2>Editais e materiais</h2></div><p>Espaço para reunir documentos oficiais e produções do programa.</p></div>
-  <div class="docs">
-    <a href="#editais">↗ <b>Edital / chamada</b><small>Documento oficial da edição</small></a>
-    <a href="#projeto">↗ <b>Projeto UFBA</b><small>Apresentação e informações</small></a>
-    <a href="#contato">↗ <b>Publicações</b><small>Resultados e materiais</small></a>
-  </div>
+<section class="section wrap" id="equipe">
+<div class="kicker reveal"><span>04</span> QUEM FAZ</div>
+<div class="section-head reveal"><h2>Pessoas diferentes.<br><em>Um trabalho coletivo.</em></h2><p>Docentes, tutores, preceptores, estudantes e trabalhadores construindo ações em conjunto.</p></div>
+<div class="team">
+<article class="team-card reveal"><div class="num">01</div><div class="icon"><svg><use href="#book"/></svg></div><h3>Docentes</h3><p>Coordenação, orientação e produção de conhecimento.</p><span>ENSINO</span></article>
+<article class="team-card reveal"><div class="num">02</div><div class="icon"><svg><use href="#users"/></svg></div><h3>Tutores e preceptores</h3><p>Integração entre universidade, serviços e território.</p><span>INTEGRAÇÃO</span></article>
+<article class="team-card reveal"><div class="num">03</div><div class="icon"><svg><use href="#heart"/></svg></div><h3>Estudantes</h3><p>Formação, pesquisa, comunicação e ações.</p><span>FORMAÇÃO</span></article>
+<article class="team-card reveal"><div class="num">04</div><div class="icon"><svg><use href="#megaphone"/></svg></div><h3>Trabalhadores</h3><p>Experiência do SUS e construção coletiva do cuidado.</p><span>SUS</span></article>
+</div>
 </section>
 
-<section class="section contact" id="contato">
-  <div><span class="eyebrow">CONECTE-SE</span><h2>Acompanhe o PET-Saúde UFBA</h2><p>Veja nossas ações e acompanhe as produções do programa.</p></div>
-  <div class="socials">
-    <a href="https://www.instagram.com/petsaudeufba/" target="_blank" rel="noopener">Instagram ↗</a>
-    <a href="mailto:petsaudeufba.comunicacao@gmail.com">E-mail ↗</a>
-    <a href="#contato">LinkedIn ↗</a>
-    <a href="#contato">YouTube ↗</a>
-  </div>
+<section class="productions" id="producoes">
+<div class="wrap">
+<div class="kicker light reveal"><span>05</span> CONHECIMENTO EM MOVIMENTO</div>
+<div class="section-head light-head reveal"><h2>Produções, materiais<br>e comunicação.</h2><p>Um espaço para dar visibilidade ao que o PET-Saúde UFBA produz, aprende e compartilha.</p></div>
+<div class="products">
+<a class="product reveal" href="#contato"><div class="product-icon"><svg><use href="#book"/></svg></div><small>01 · PESQUISA</small><h3>Estudos e produções</h3><p>Resultados, relatos e materiais construídos ao longo das ações.</p><b>Explorar <svg><use href="#arrow"/></svg></b></a>
+<a class="product reveal" href="#contato"><div class="product-icon"><svg><use href="#megaphone"/></svg></div><small>02 · COMUNICAÇÃO</small><h3>Notícias e ações</h3><p>Conteúdos para aproximar o programa da comunidade.</p><b>Acompanhar <svg><use href="#arrow"/></svg></b></a>
+<a class="product reveal" href="#contato"><div class="product-icon"><svg><use href="#map"/></svg></div><small>03 · DOCUMENTOS</small><h3>Editais e materiais</h3><p>Documentos oficiais e materiais de referência.</p><b>Consultar <svg><use href="#arrow"/></svg></b></a>
+</div>
+</div>
+</section>
+
+<section class="contact wrap section" id="contato">
+<div class="contact-box reveal">
+<div><div class="kicker"><span>06</span> CONECTE-SE</div><h2>Acompanhe o<br><em>PET-Saúde UFBA.</em></h2><p>Fique perto das ações, produções e novidades do programa.</p></div>
+<div class="links">
+<a href="https://www.instagram.com/petsaudeufba/" target="_blank" rel="noopener"><span><svg><use href="#instagram"/></svg></span><div><small>INSTAGRAM</small><b>@petsaudeufba</b></div><svg><use href="#arrow"/></svg></a>
+<a href="mailto:petsaudeufba.comunicacao@gmail.com"><span><svg><use href="#mail"/></svg></span><div><small>E-MAIL</small><b>petsaudeufba.comunicacao@gmail.com</b></div><svg><use href="#arrow"/></svg></a>
+</div>
+</div>
 </section>
 </main>
-
-<footer><b>PET-Saúde | UFBA</b><span>Universidade Federal da Bahia · 13ª edição — PET-Saúde Clima</span></footer>
+<footer><div class="wrap foot"><div class="brand"><div class="brand-symbol"><b>PET</b><span></span></div><div><strong>PET-Saúde</strong><small>Universidade Federal da Bahia</small></div></div><a href="#top">Voltar ao topo ↑</a></div><div class="wrap legal"><span>© <span id="year"></span> PET-Saúde | UFBA</span><span>13ª edição — PET-Saúde Clima</span></div></footer>
+<button class="top" aria-label="Voltar ao topo">↑</button>
 <script>
-const menu=document.querySelector('.menu'), nav=document.querySelector('nav');
-menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});
-nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');}));
+const btn=document.querySelector('.menu'),nav=document.querySelector('nav');btn.onclick=()=>{const open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',open);btn.querySelector('use').setAttribute('href',open?'#close':'#menu')};nav.querySelectorAll('a').forEach(a=>a.onclick=()=>{nav.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.querySelector('use').setAttribute('href','#menu')});
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('visible')),{threshold:.12});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+const top=document.querySelector('.top');addEventListener('scroll',()=>top.classList.toggle('show',scrollY>650),{passive:true});top.onclick=()=>scrollTo({top:0,behavior:'smooth'});document.querySelector('#year').textContent=new Date().getFullYear();
 </script>
 </body>
 </html>
